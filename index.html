@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a07811c452.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a07811c452.js">
+</head>
+
+<body>
+    <div class="heading">
+        <h1 id="mainHeading"><span><i class="fa-solid fa-chevron-left"></i></span> Add Image/Icon</h1>
+    </div>
+    <div class="main">
+        <h2 id="heading2">Upload Image</h2>
+        
+    <input id="image" type="file" accept="image/jpeg, image/png, image/jpg">
+    </div>
+    <output id="displayImage"></output>
+    <div class="preview display" >
+        <i class="fa-solid fa-rotate-right" id="rotate"></i>
+        <i class="fa-solid fa-repeat" id="flip"></i>
+        <i class="fa-solid fa-crop-simple" id="crop"></i>
+        <div class="cropped display">
+            <label for="selectImage"></label>
+        <select  id="selectImage">
+            <option value="150x50" id="small">Small (100x50)</option>
+            <option value="200x200" id="medium">Medium Square (200x200)</option>
+            <option value="350x150">Medium (350x150)</option>
+            <option value="400x400">Large Sqaue (400x400)</option>
+            <option value="650x350">Large (650x350)</option>
+            <option value="800x600">X-Large (800x600)</option>
+            <option value="1920x1080">Full HD (1920x1080)</option>
+        </select>
+        </div>
+        
+        <img src="" alt="image" id="previewimage">
+        
+    </div>
+    <button id="next">Next</button>
+    <div class="frames display">
+        <div class="allframe">
+            <img src="user_image_frame_1.png" class="frame " alt="image not found">
+            <img src="user_image_frame_2.png" class="frame " alt="">
+            <br><img src="user_image_frame_3.png" class="frame " alt="">
+            <img src="user_image_frame_4.png" class="frame " alt="">
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/a07811c452.js" crossorigin="anonymous"></script>
+
+</html>
